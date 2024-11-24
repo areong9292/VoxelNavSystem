@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{4E0BC4E5-4133-6D5B-CEAD-3293E3E60B5B}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "VoxelNavSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
