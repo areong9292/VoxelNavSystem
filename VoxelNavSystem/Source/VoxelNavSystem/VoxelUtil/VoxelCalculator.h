@@ -7,7 +7,9 @@
 class VoxelCalculator
 {
 public:
+	static void CalcRootAABB(IN SparseVoxelOctreeNode* InRootNode, IN ChunkIndex InChunkIndex);
+	static void CalcAABB(IN FVector InAABBCenter, IN int InChildIndex, IN float InCurrentNodeSize, OUT FVector OutAABBMin, OUT FVector OutAABBMax, OUT FVector OutAABBCenter);
 	static void CalcChunkIndex(IN FVector InCurrentPos, OUT ChunkIndex& OutChunkIndex);
 	static void CalcVoxelKey(IN FVector InCurrentPos, OUT VoxelKey& outVoxelKey);
-
+	static bool HasCollision(IN FVector InAABBMin, IN FVector INAABBMax);
 };
