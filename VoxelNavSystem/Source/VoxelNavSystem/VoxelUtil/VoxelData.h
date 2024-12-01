@@ -3,7 +3,7 @@
 #pragma once
 
 #define MAX_CHUNK_SIZE 128
-#define VOXEL_SIZE 50
+#define VOXEL_SIZE 100
 
 // 1 Chunk = VOXEL_COUNT_IN_CHUNK * VOXEL_COUNT_IN_CHUNK * VOXEL_COUNT_IN_CHUNK Voxel
 #define VOXEL_COUNT_IN_CHUNK 64
@@ -72,10 +72,7 @@ public:
 
 	float m_NodeSize;
 
-	bool m_IsEndNode = false;
-	bool m_IsLeafNode = false;
-
 	VoxelData m_NodeData;
 
-	TArray<SparseVoxelOctreeNode> m_ChildNode;
+	TArray<SparseVoxelOctreeNode*> m_ChildNode;
 };
