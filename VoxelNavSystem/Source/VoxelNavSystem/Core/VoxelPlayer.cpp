@@ -5,6 +5,5 @@
 
 void AVoxelPlayer::BuildChunkInCurrentPos()
 {
-	FVector CurrentPos = GetActorLocation();
-	VoxelManager::BuildChunkInCurrentPos(CurrentPos);
+	VoxelManager::BuildChunkInCurrentPos(this);
 }

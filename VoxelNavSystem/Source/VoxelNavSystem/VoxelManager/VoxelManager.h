@@ -9,7 +9,7 @@ class VoxelManager
 {
 public:
 	// Build Chunk In Current Pos
-	static void BuildChunkInCurrentPos(IN FVector InCurrentPos);
+	static void BuildChunkInCurrentPos(IN const AActor* InCurrentPlayer);
 
 	// VoxelMap
 	//TMap<VoxelKey, VoxelData> m_VoxelMap;
